@@ -1,3 +1,7 @@
+.header{
+  text-align: center;
+}
+
 .container {
   box-shadow: 0px 0px 2px;
   padding: 10px;
@@ -61,6 +65,10 @@ input:focus {
 .todo-list li span {
   flex-grow: 1;
   margin-right: 10px;
+}
+
+.todo-list:empty {
+  display: none;
 }
 
 .todo-item {
