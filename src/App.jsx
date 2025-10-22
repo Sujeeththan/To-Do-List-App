@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <h1>Welcome</h1>
+      <h1 className='header' >Todo-App</h1>
       <TodoApp />
     </>
   )
