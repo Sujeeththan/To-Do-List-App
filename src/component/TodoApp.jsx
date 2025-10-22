@@ -30,6 +30,7 @@ function TodoApp() {
       />
       <button id='btn' onClick={addTodo}>Add Task</button>
       <div>
+        {todosList.length > 0 && (
         <ul className="todo-list">
           {todosList.map((item) => (
             <li className="todo-item" key={item.id}>
@@ -40,6 +41,7 @@ function TodoApp() {
             </li>
           ))}
         </ul>
+      )}
       </div>
     </div>
   );
