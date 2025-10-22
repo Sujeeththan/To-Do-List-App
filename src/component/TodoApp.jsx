@@ -33,10 +33,9 @@ function TodoApp() {
         <ul className="todo-list">
           {todosList.map((item) => (
             <li className="todo-item" key={item.id}>
-              {item.text}
               <span>{item.text}</span>
-              <button onClick={(e) => {
-                e.deleteTodo(item.id);
+              <button onClick={() => {
+                deleteTodo(item.id);
               }}>Del</button>
             </li>
           ))}
